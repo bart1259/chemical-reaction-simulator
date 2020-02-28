@@ -1,0 +1,18 @@
+~Chemicals
+O2 #
+NCO 4.0 #
+CO2 0.02 #
+NO 0.23 #
+CN 3.0 #
+CO 0.0 #
+CH3 3.1415 #
+CH3CO 1.21 #
+
+~Reactions
+O2 + NCO -> CO2 + NO ; Kfwd = 100.0 ; Kequ = 30.0
+CN + CO2 -> CO + NCO ; Kfwd = 20.0 ; Kequ = 2.0
+CO + CH3 -> CH3CO ; Kfwd = 15.0 ; Kequ = 0.02
+
+~Additions
+CO -2.0 t = 0.05
+O2 3.0 t = 0.1
