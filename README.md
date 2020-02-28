@@ -21,7 +21,7 @@ This program supports:
 ## Tutorial
 
 #### How to run the program
-- Download the .jar file from the releases page
+- Download the .jar file from the releases page [here](https://github.com/bart1259/chemical-reaction-simulator/releases/tag/v1.0)
 - Run the jar file
 
 #### How to make a custom simulation
