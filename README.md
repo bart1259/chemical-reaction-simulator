@@ -1,11 +1,9 @@
-#Chemical Equilibrium Simulator
-
-git
+# Chemical Equilibrium Simulator
 
 ![image](https://i.imgur.com/jMYo5Nj.png)
 ![image](https://i.imgur.com/CodqPBE.png)
 
-##Features
+## Features
 
 This program supports:
 
@@ -20,22 +18,22 @@ This program supports:
 - Outputting concentrations over time as a spreadsheet
 - Deciding which chemicals to graph and output
 
-##Tutorial
+## Tutorial
 
-####How to run the program
+#### How to run the program
 - Download the .jar file from the releases page
 - Run the jar file
 
-####How to make a custom simulation
+#### How to make a custom simulation
 
-#####Specifying Chemicals
+##### Specifying Chemicals
 
 In the chemicals text box, all the chemicals present in the simulation are listed. The name of the
  chemical does not matter and is only used to reference that specific chemical. Next to each
 chemical the initial concentration of the chemical can be listed, this can be any positive number
 or zero. Afterwards, if a pound sign (#) is present, the chemical will be tracked.
 
-######Examples:
+###### Examples:
 
 Nitrous oxide with an initial concentration of 3.0 M and which will NOT have its concentration
 tracked.
@@ -47,7 +45,7 @@ concentration be tracked.
     
     CarbonDioxide #
 
-#####Specifying Reversible Chemical Reactions
+#####S pecifying Reversible Chemical Reactions
 
 In the reactions text box, all the reaction the simulation obeys are listed. The first part of
 the statement specifies the reactants and products with their respective stoichiometric 
@@ -55,7 +53,7 @@ coefficients. If no coefficient is present, a coefficient of 1 is assumed. Non-i
 are not supported. Following a semi colon, the forward rate constant is specified and following 
 another semi colon, the equilibrium constant is specified.
 
-######Examples
+###### Examples
 
 A reaction of carbon monoxide and a methyl group to make an acetyl group. The forward reaction
 rate constant is 15 and the equilibrium constant is 0.02.
@@ -68,7 +66,7 @@ is 5 x 10^7
     
     H2SO4 + 2 NaOH -> Na2SO4 + 2 H2O ; Kfwd = 6.0 ; Kequ = 5.0e7
     
-#####Specifying Chemical Additions
+##### Specifying Chemical Additions
 
 In the chemical additions text box, all the additions that occur during an experiment are
 stated. First the chemical that is to be added is stated. Next, the amount of the chemical, in
@@ -76,7 +74,7 @@ stated. First the chemical that is to be added is stated. Next, the amount of th
  removing a chemical from the simulation). Next the time when the chemical is added is 
  specified. The time is measured in seconds.
 
-######Examples
+###### Examples
 
 3.0 moles per liter of oxygen gas will be added to the simulation 0.1 seconds into the experiment.
 
@@ -88,13 +86,13 @@ will be removed.
     
     CO2 -4.0 t = 0.25
 
-####How to output the experiment as a spreadsheet
+#### How to output the experiment as a spreadsheet
 
 - Ensure the chemicals that need to be tracked have a # symbol next to them
 - Run the simulation
 - Go to the output tab and press the Output as CSV button
 
-##Theory
+## Theory
 
 A reversible chemical reaction is a reaction where reactants turn into products and products 
 can turn back into reactants. Two reactions occur simultaneously, the forward and reverse 
@@ -130,7 +128,7 @@ equal to the forward rate constant divided by the backward rate constant.
        
 The values of kfwd and kequ are unique for each reversible reaction.
 
-##How the simulation works
+## How the simulation works
 
 By keeping track of all the chemicals present in the simulation and by knowing what chemical 
 reactions can occur between the chemicals, with the constant values given, the forward reaction 
@@ -143,7 +141,7 @@ multiplying the rate, the units being moles per liter seconds, by a time value, 
  delta time, the more accurate the simulation will be but the longer it will take to compute.
 
 
-##Potential future features
+## Potential future features
 
 - Add support for temperature and pressure
 - Add support Support heterogeneous reactions
